@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
         destination: 'http://127.0.0.1:5001/socket.io/:path*',
       },
       {
-        source: '/((?!api|_next|static|.*\\..*).*)',
+        source: '/((?!api|_next|static|.*\\..*).+)',
         destination: '/',
       },
     ];
