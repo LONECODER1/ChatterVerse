@@ -8,6 +8,6 @@ const getBaseURL = () => {
 };
 
 export const axiosInstance = axios.create({
-    baseURL: process.env.NODE_ENV === "development" ? getBaseURL() : "/api",
+    baseURL: process.env.NEXT_PUBLIC_API_URL || (process.env.NODE_ENV === "development" ? getBaseURL() : "/api"),
     withCredentials: true,
 });

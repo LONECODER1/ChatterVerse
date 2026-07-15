@@ -11,7 +11,7 @@ const getBaseURL = () => {
     return "/";
 };
 
-const BASE_URL = process.env.NODE_ENV === "development" ? getBaseURL() : "/";
+const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL || (process.env.NODE_ENV === "development" ? getBaseURL() : "/");
 
 export const useAuthStore = create<AuthStore>((set, get) => ({
     authUser: null,
