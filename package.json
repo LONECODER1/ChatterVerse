@@ -8,6 +8,7 @@
     "dev:all": "concurrently \"npm run dev\" \"npm run server\"",
     "build": "next build",
     "start": "next start",
+    "start:all": "concurrently \"npm run start\" \"npm run server\"",
     "lint": "eslint"
   },
   "dependencies": {
