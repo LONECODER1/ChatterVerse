@@ -2,11 +2,11 @@
 
 import Navbar from "@/components/Navbar";
 
-import HomePage from "./(client)/HomePage/page";
-import SignUpPage from "./(client)/SignUpPage/page";
-import LoginPage from "./(client)/LoginPage/page";
-import SettingsPage from "./(client)/SettingsPage/page";
-import ProfilePage from "./(client)/ProfilePage/page";
+import HomePage from "./(client)/HomePage/HomePage";
+import SignUpPage from "./(client)/SignUpPage/SignUpPage";
+import LoginPage from "./(client)/LoginPage/LoginPage";
+import SettingsPage from "./(client)/SettingsPage/SettingsPage";
+import ProfilePage from "./(client)/ProfilePage/ProfilePage";
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useAuthStore } from "@/store/useAuthStore";
